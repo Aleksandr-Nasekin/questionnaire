@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Анкета</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__menu-btn"></div>
+			<ul class="header__list">
+				<li class="header__item"><a href="#personal" class="header__link active">Личная информация</a></li>
+				<li class="header__item"><a href="#experience" class="header__link">Опыт</a></li>
+				<li class="header__item"><a href="#js" class="header__link">JavaScript</a></li>
+				<li class="header__item"><a href="#about" class="header__link">О себе</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="container">
+		<h1 class="title">Анкета</h1>
+	</div>
+
+	<form>
+		<div class="container">
+			<section class="personal" id="personal">
+				<div class="personal__icon"></div>
+				<h2 class="subtitle personal__subtitle">Личная информация</h2>
+				<div class="personal__input">
+					<input type="text" id="name" name="name" required value="Насекин Александр Анатольевич">
+					<label for="name" class="personal__label">ФИО</label>
+				</div>
+				<div class="personal__select">
+					<select id="birth" name="birth">
+						<option value="1988">1988</option>
+						<option value="1989">1989</option>
+						<option value="1990">1990</option>
+						<option selected value="1991">1991</option>
+						<option value="1992">1992</option>
+						<option value="1993">1993</option>
+						<option value="1994">1994</option>
+						<option value="1995">1995</option>
+						<option value="1996">1996</option>
+						<option value="1997">1997</option>
+						<option value="1998">1998</option>
+						<option value="1999">1999</option>
+						<option value="2000">2000</option>
+						<option value="2001">2001</option>
+					</select>
+					<label for="birth" class="personal__label">Год рождения</label>
+				</div>
+				<div class="personal__input">
+					<input type="text" id="residence" name="residence" required value="г.Ишим">
+					<label for="residence" class="personal__label">Место проживания</label>
+				</div>
+				<div class="personal__input">
+					<input type="text" id="skype" name="skype" required value='https://join.skype.com/invite/FSxoRUlbmxQe'>
+					<label for="skype" class="personal__label">Skype</label>
+				</div>
+				<div class="personal__input">
+					<input type="text" id="email" name="email" required value="nasekinaleks@yandex.ru">
+					<label for="email" class="personal__label">E-mail</label>
+				</div>
+			</section>
+		
+			<section class="experience" id="experience">
+				<div class="experience__icon"></div>
+				<h2 class="subtitle experience__subtitle">Расскажите о своем опыте</h2>
+				<div class="experience__wrapper">
+					<div class="experience__checkbox">
+						<input type="checkbox" id="checkbox-1" checked>
+						<label for="checkbox-1" class="experience__label">БЭМ/OOCSS</label>
+					</div>
+					<div class="experience__checkbox">
+						<input type="checkbox" id="checkbox-2" checked>
+						<label for="checkbox-2" class="experience__label">Stylus/LESS/SASS</label>
+					</div>
+					<div class="experience__checkbox">
+						<input type="checkbox" id="checkbox-3" checked>
+						<label for="checkbox-3" class="experience__label">Работаю с SVG</label>
+					</div>
+					<div class="experience__checkbox">
+						<input type="checkbox" id="checkbox-4" checked>
+						<label for="checkbox-4" class="experience__label">Верстаю семантично</label>
+					</div>
+					<div class="experience__checkbox">
+						<input type="checkbox" id="checkbox-5" checked>
+						<label for="checkbox-5" class="experience__label">ES2015/ES2016</label>
+					</div>
+					<div class="experience__checkbox">
+						<input type="checkbox" id="checkbox-6" checked>
+						<label for="checkbox-6" class="experience__label">Gulp/GRUNT</label>
+					</div>
+					<div class="experience__checkbox">
+						<input type="checkbox" id="checkbox-7">
+						<label for="checkbox-7" class="experience__label">Webpack</label>
+					</div>
+					<div class="experience__checkbox">
+						<input type="checkbox" id="checkbox-8" checked>
+						<label for="checkbox-8" class="experience__label">jQuery</label>
+					</div>
+					<div class="experience__checkbox">
+						<input type="checkbox" id="checkbox-9">
+						<label for="checkbox-9" class="experience__label">Ипользую Git</label>
+					</div>
+				</div>
+			</section>
+		
+			<section class="js" id="js">
+				<div class="js__icon"></div>
+				<h2 class="subtitle js__subtitle">Уровень владения JavaScript</h2>
+				<div class="js__wrapper">
+					<div class="js__radio">
+						<input type="radio" name="js" id='0'>
+						<label for="0" class="js__label">Не владею</label>
+					</div>
+					<div class="js__radio">
+						<input type="radio" name="js" id='1'>
+						<label for="1" class="js__label">Использую готовые решения</label>
+					</div>
+					<div class="js__radio">
+						<input type="radio" name="js" id='2' checked>
+						<label for="2" class="js__label">Использую готовые решения и умею и переделывать</label>
+					</div>
+					<div class="js__radio">
+						<input type="radio" name="js" id='3'>
+						<label for="3" class="js__label">Пишу сложный JS с нуля</label>
+					</div>
+					<div class="js__progressbar">
+						<div class="js__progressbar_gradient"></div>
+						<input class="js__range" type="range" value="50" min="0" max="100" step="25" />
+					</div>
+				</div>
+			</section>
+		
+			<section class="about" id="about">
+				<div class="about__icon"></div>
+				<h2 class="subtitle about__subtitle">Расскажите о себе</h2>
+				<p class="about__description">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+				<textarea class="about__textarea" placeholder="Понравилась тем, что...">Понравилась тем, что сотрудники Вашей студии имеют большой опыт. С их помощью я смогу развиваться как специалист. Возможность удалённой работы. Справедливая оплата труда.</textarea>
+			</section>
+		
+			<button class="form-submit" type="submit">Готово</button>
+		</div>
+	</form>
+
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>
