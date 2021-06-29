@@ -4,12 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Анкета</title>
-	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/main.css?v1.1">
 </head>
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header__menu-btn"></div>
+			<div class="header__menu-btn">
+				<span></span>
+			</div>
 			<ul class="header__list">
 				<li class="header__item"><a href="#personal" class="header__link active">Личная информация</a></li>
 				<li class="header__item"><a href="#experience" class="header__link">Опыт</a></li>
@@ -33,7 +35,7 @@
 					<label for="name" class="personal__label">ФИО</label>
 				</div>
 				<div class="personal__select">
-					<select id="birth" name="birth">
+					<select name="birth">
 						<option value="1988">1988</option>
 						<option value="1989">1989</option>
 						<option value="1990">1990</option>
@@ -49,10 +51,9 @@
 						<option value="2000">2000</option>
 						<option value="2001">2001</option>
 					</select>
-					<label for="birth" class="personal__label">Год рождения</label>
 				</div>
 				<div class="personal__input">
-					<input type="text" id="residence" name="residence" required value="г.Ишим">
+					<input type="text" id="residence" name="residence" required value="г. Ишим">
 					<label for="residence" class="personal__label">Место проживания</label>
 				</div>
 				<div class="personal__input">
@@ -146,7 +147,20 @@
 		</div>
 	</form>
 
+	<div class="menu">
+		<!-- <button class="btn-close"></button> -->
+		<div class="menu__wrapper">
+			<ul class="menu__list">
+				<li class="menu__item"><a href="#personal" class="menu__link active">Личная информация</a></li>
+				<li class="menu__item"><a href="#experience" class="menu__link">Опыт</a></li>
+				<li class="menu__item"><a href="#js" class="menu__link">JavaScript</a></li>
+				<li class="menu__item"><a href="#about" class="menu__link">О себе</a></li>
+			</ul>
+		</div>
+	</div>
+
 	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="./js/script.js"></script>
+	<script src="./js/smooth-scrollbar.js"></script>
+	<script src="./js/script.js?v1.1"></script>
 </body>
 </html>
